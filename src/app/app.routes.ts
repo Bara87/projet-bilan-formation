@@ -21,7 +21,6 @@ export const routes: Routes = [
   { path: 'alimentation', component: AlimentationComponent },
   
   { path: 'artisan-detail', component: ArtisanDetailComponent },
-  { path: '**', component: NotFoundComponent }
+  { path: '**', component: NotFoundComponent }  //
 ];
 
-  
