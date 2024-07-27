@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ArtisanDataService, Artisan } from '../artisan-data.service';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Router } from '@angular/router';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 @Component({
   standalone: true,
@@ -31,34 +32,35 @@ export class ArtisanDetailComponent implements OnInit {
     } else {
       console.log('No artisan found.');
     }
+
+    // Initialiser EmailJS
+    emailjs.init('uLX1cMy2oeCpTjg5h');
   }
 
   submitForm() {
     this.formSubmitted = true;
 
-    if (!this.artisan) return;
-
     if (!this.name || !this.subject || !this.message) {
       return;
     }
 
-    const formData = {
-      artisanId: this.artisan.id,
-      name: this.name,
+    const templateParams = {
+      to_name: this.name,
       subject: this.subject,
-      message: this.message
+      message: `You got a new message from ${this.name}:\n\nRegarding: ${this.subject}:\n\nMessage: ${this.message}\n\nBest wishes,\nEmailJS team.`,
     };
 
-    console.log('Form data to submit:', formData);
-    this.resetForm();  
+    emailjs.send('service_2om1oho', 'template_w9596xg', templateParams)
+      .then((response: EmailJSResponseStatus) => {
+        console.log('E-mail envoyé avec succès :', response);
+
+        this.name = '';
+        this.subject = '';
+        this.message = '';
+        this.formSubmitted = false;
+      })
+      .catch((error) => {
+        console.error('Erreur lors de l\'envoi de l\'e-mail :', error);
+      });
   }
-
-  resetForm() {
-    this.name = '';
-    this.subject = '';
-    this.message = '';
-    this.formSubmitted = false;
-  }
-	}
-
-
+}
