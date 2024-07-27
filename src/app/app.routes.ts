@@ -1,3 +1,4 @@
+
 import { Routes } from '@angular/router';
 import { BatimentComponent } from './batiment/batiment.component';
 import { ServicesComponent } from './services/services.component';
@@ -23,3 +24,4 @@ export const routes: Routes = [
   { path: '**', component: NotFoundComponent }
 ];
 
+  
