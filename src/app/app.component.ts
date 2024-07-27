@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet, Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
-  selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterModule, RouterOutlet, CommonModule, HeaderComponent, FooterComponent],
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'trouve-ton-artisan';
+  constructor(private router: Router) {}
+
 }
