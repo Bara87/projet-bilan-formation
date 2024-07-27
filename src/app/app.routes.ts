@@ -1,3 +1,11 @@
+
+import { Routes } from '@angular/router';
+import { BatimentComponent } from './batiment/batiment.component';
+import { ServicesComponent } from './services/services.component';
+import { FabricationComponent } from './fabrication/fabrication.component';
+import { AlimentationComponent } from './alimentation/alimentation.component';
+import { NotFoundComponent } from './notfound/notfound.component';
+import { HomeComponent } from './home/home.component';
 import { ArtisanDetailComponent } from './artisan-detail/artisan-detail.component';
 import { ArtisanListComponent } from './artisan-list/artisan-list.component';
 
@@ -15,3 +23,5 @@ export const routes: Routes = [
   { path: 'artisan-detail', component: ArtisanDetailComponent },
   { path: '**', component: NotFoundComponent }
 ];
+
+  
