@@ -4,6 +4,7 @@ import { ArtisanDataService, Artisan } from '../artisan-data.service';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Router } from '@angular/router';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { environment } from '../../environments/environment';
 
 @Component({
   standalone: true,
@@ -33,8 +34,8 @@ export class ArtisanDetailComponent implements OnInit {
       console.log('No artisan found.');
     }
 
-    // Initialiser EmailJS
-    emailjs.init('uLX1cMy2oeCpTjg5h');
+    // Initialiser EmailJS avec la clé publique
+    emailjs.init(environment.emailUserID);
   }
 
   submitForm() {
@@ -45,12 +46,13 @@ export class ArtisanDetailComponent implements OnInit {
     }
 
     const templateParams = {
-      to_name: this.name,
+      to_name: environment.emailRecipient,
+      from_name: this.name,
       subject: this.subject,
       message: `You got a new message from ${this.name}:\n\nRegarding: ${this.subject}:\n\nMessage: ${this.message}\n\nBest wishes,\nEmailJS team.`,
     };
 
-    emailjs.send('service_2om1oho', 'template_w9596xg', templateParams)
+    emailjs.send(environment.emailServiceID, environment.emailTemplateID, templateParams)
       .then((response: EmailJSResponseStatus) => {
         console.log('E-mail envoyé avec succès :', response);
 
