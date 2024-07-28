@@ -1,94 +1,90 @@
 footer {
  
-    .footer-background {
-      background-color: #0074c7;
-      color: white;
-      padding: 1rem 0;
-      width: 100vw;
-      margin-left: calc(50% - 50vw);
-    }
-  
-   
-    .row {
-      display: flex;
-      align-items: start; 
-      justify-content:space-between; 
-      flex-wrap: nowrap;
-      margin: 0;
-    }
-  
-    .col-md-3 {
-      text-align: left;
-      
-    }
-  
-    .logo {
-      max-width: 70%; 
-  
-    .footer-title {
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-  
-      i {
-        margin-right: 10px;
-      }
-    }
-  
-    address {
-      font-style: normal;
-      line-height: 1.5;
-    }
-  
-  
-    .bi-geo-alt-fill,
-    .bi-link-45deg {
-      font-size: 1.25rem;
-    }
-  
-   
-  }
-  
-  
-  .list-unstyled{
-    padding-left: 0;
-    list-style: none;
-
-    li {
-      margin-bottom: 5px;
-      color: white;
-    
-      a {
-          color: inherit;
-          text-decoration: none;
-          color: white;
-  
-          &:hover {
-            text-decoration: underline; 
-          }
-        }
-      
-    }
+  .footer-background {
+    background-color: #0074c7;
+    color: white;
+    padding: 1rem 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
   }
 
-  
-  .social-media {
+ 
+  .row {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    align-items: start; 
+    justify-content:space-between; 
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+
+  .col-md-3 {
+    text-align: left;
     
   }
-  
-  .social-media a {
-    text-decoration: none;
-    color: var(--color-dark);
+
+  .logo {
+    max-width: 70%; 
+
+  .footer-title {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: 10px;
+    }
   }
-  
-  .social-media a img {
-    width: 30px;  
-    height: 30px; 
+
+  address {
+    font-style: normal;
+    line-height: 1.5;
   }
- }
+
+
+  .bi-geo-alt-fill,
+  .bi-link-45deg {
+    font-size: 1.25rem;
+  }
+
+ 
+}
+
+
+.list-unstyled{
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    margin-bottom: 5px;
+    color: white;
+  
+    a {
+        color: inherit;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          text-decoration: underline; 
+        }
+      }
+    
+  }
+}
+
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+}
+
+.social-media a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+} 
