@@ -30,11 +30,11 @@ header {
       transition: color 0.3s, background-color 0.3s;
 
       &:hover {
-        color: #00497c !important;
+        color: $primary-color !important;
       }
 
       &.active {
-        background-color: #0074c7 !important;
+        background-color: $accent-color !important;
         width: auto;
         color: white !important;
       }
@@ -43,8 +43,8 @@ header {
     .form-control {
       max-width: 300px;
       border: none;
-      border-right: 1px solid #0074c7 !important;
-      border-bottom: 1px solid #0074c7 !important;
+      border-right: 1px solid $accent-color !important;
+      border-bottom: 1px solid $accent-color !important;
       transition: border 0.3s;
 
       &:focus {
