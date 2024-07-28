@@ -1,0 +1,11 @@
+{
+  "routes": [
+    "/alimentation",
+    "/artisan-detail",
+    "/artisans",
+    "/batiment",
+    "/fabrication",
+    "/home",
+    "/services"
+  ]
+}
