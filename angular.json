@@ -38,7 +38,8 @@
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ]
+            ],
+            "baseHref": "/projet-bilan-formation/"
           },
           "configurations": {
             "production": {
@@ -51,7 +52,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -68,14 +68,16 @@
                   "maximumWarning": "200kb",
                   "maximumError": "300kb"
                 }
-              ]
+              ],
+              "baseHref": "/projet-bilan-formation/"
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true,
               "vendorChunk": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "baseHref": "/"
             }
           },
           "defaultConfiguration": "production"
