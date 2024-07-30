@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# trouve-ton-artisan
-=======
+
 # TrouveTonArtisan
 
 ## Description
