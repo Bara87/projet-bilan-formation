@@ -53,9 +53,9 @@ Après l'installation, suivez ces étapes pour lancer le projet :
 
 Le projet inclut plusieurs composants, services et pipes générés :
 
-__1. Composants__ : Header, Footer, Home, ArtisanList, ArtisanDetail, etc.
-__2. Services__ : ArtisanDataService, EmailService, etc.
-__3. Pipes__ : Serach pipes pour formater les données de recherche.
+1. Composants : Header, Footer, Home, ArtisanList, ArtisanDetail, etc.
+2. Services : ArtisanDataService, EmailService, etc.
+3. Pipes: Serach pipes pour formater les données de recherche.
 
 ## Contribution
 
