@@ -61,7 +61,7 @@ export class ArtisanDetailComponent implements OnInit {
         this.message = '';
         this.formSubmitted = false;
       })
-      .catch((error) => {
+      .catch((error:unknown) => {
         console.error('Erreur lors de l\'envoi de l\'e-mail :', error);
       });
   }
