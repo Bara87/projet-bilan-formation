@@ -29,30 +29,33 @@ Suivez ces étapes pour installer le projet sur votre machine locale :
    cd trouve-ton-artisan
    
 2.**Installer les dépendances**
+    ```bash
     npm install
     
 3.**Configurer EmailJS**
-   Créez un compte sur EmailJS.
-   Configurez votre service email, modèle et ID utilisateur.
-   Mettez à jour les informations de configuration EmailJS dans votre projet Angular (probablement dans un service ou un composant spécifique).
+   1. Créez un compte sur EmailJS.
+   2. Configurez votre service email, modèle et ID utilisateur.
+   3. Mettez à jour les informations de configuration EmailJS dans votre projet Angular (probablement dans un service ou un composant spécifique).
    
 ## Instrcutions de lancement
 
 Après l'installation, suivez ces étapes pour lancer le projet :
 
 1. **Compiler les styles Sass**
+   ```bash
    npm run build sass
    
-2.**Lancer l'application Angular**
-   ng serve
+2.**Lancer l'application Angular**    
    
-## Fonctionnalités et Composants
+   ng serve 
+   
+## Fonctionnalités et composants
 
 Le projet inclut plusieurs composants, services et pipes générés :
 
-__Composants__ : Header, Footer, Home, ArtisanList, ArtisanDetail, etc.
-__Services__ : ArtisanDataService, EmailService, etc.
-__Pipes__ : Serach pipes pour formater les données de recherche.
+__1. Composants__ : Header, Footer, Home, ArtisanList, ArtisanDetail, etc.
+__2. Services__ : ArtisanDataService, EmailService, etc.
+__3. Pipes__ : Serach pipes pour formater les données de recherche.
 
 ## Contribution
 
