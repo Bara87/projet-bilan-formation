@@ -1,31 +1,66 @@
-<<<<<<< HEAD
-# trouve-ton-artisan
-=======
+
 # TrouveTonArtisan
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+## Description
+"Trouve ton Artisan" est une application Angular permettant aux utilisateurs de trouver facilement des artisans qualifiés dans divers domaines. L'application utilise Angular, Bootstrap pour le style, Sass pour les styles personnalisés, et EmailJS pour l'envoi d'emails.
 
-## Development server
+## Prérequis
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Avant de commencer l'installation, assurez-vous d'avoir les logiciels et dépendances suivants installés sur votre machine :
 
-## Code scaffolding
+- **Node.js** (version 20.15) et **npm** (version 10.7)
+  - Téléchargement : [Node.js](https://nodejs.org
+    
+- **Angular CLI** (version 18)
+  - Installation : `npm install -g @angular/cli`  
+    
+- **Git** (pour cloner le repository)
+  - Téléchargement : [Git](https://git-scm.com/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instructions d'installation
 
-## Build
+Suivez ces étapes pour installer le projet sur votre machine locale :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Cloner le repository**
+   ```bash
+   git clone https://github.com/your-username/trouve-ton-artisan.git
+   cd trouve-ton-artisan
+   
+2.**Installer les dépendances**
+    ```bash
+    npm install
+    
+3.**Configurer EmailJS**
+   1. Créez un compte sur EmailJS.
+   2. Configurez votre service email, modèle et ID utilisateur.
+   3. Mettez à jour les informations de configuration EmailJS dans votre projet Angular (probablement dans un service ou un composant spécifique).
+   
+## Instrcutions de lancement
 
-## Running unit tests
+Après l'installation, suivez ces étapes pour lancer le projet :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Compiler les styles Sass**
+   ```bash
+   npm run build sass
+   
+2.**Lancer l'application Angular**    
+   
+   ng serve 
+   
+## Fonctionnalités et composants
 
-## Running end-to-end tests
+Le projet inclut plusieurs composants, services et pipes générés :
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Composants : Header, Footer, Home, ArtisanList, ArtisanDetail, etc.
+2. Services : ArtisanDataService, EmailService, etc.
+3. Pipes: Serach pipes pour formater les données de recherche.
 
-## Further help
+## Contribution
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
->>>>>>> d3c787c ( first commit)
+Les contributions sont les bienvenues ! Veuillez suivre les étapes suivantes pour contribuer au projet :
+
+ 1. Fork le repository.
+ 2. Créez une branche pour votre fonctionnalité (__git checkout -b feature/YourFeature__).
+ 3. Commitez vos modifications (__git commit -m 'Add some feature__).
+ 4. Poussez vers la branche (__git push origin feature/YourFeature__).
+ 5. Ouvrez une Pull Request.
